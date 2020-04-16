@@ -1,0 +1,58 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Apr 10 13:51:14 2020
+
+@author: ARKADIP GHOSH
+"""
+
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  
+  <title>ML API</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/mystyle.css') }}">
+  
+</head>
+
+<body style="font-weight: bold;">
+ <div class="login">
+	<h1 style="color:MediumSeaGreen;"> Movie recommendation system</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Name of the movie" placeholder="Name of the movie(year)" required="required" />
+        
+        <button style="color:MediumSeaGreen;" type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    <font color="MediumSeaGreen" size="12" > {{prediction_text0}} </font>
+   <br>
+   <br>
+ <font color="red">  {{prediction_text1}} </font>
+   <br>
+  <font color="MediumSeaGreen"> {{prediction_text2}}</font>
+   <br>
+  <font color="MediumSeaGreen"> {{prediction_text3}}</font>
+   <br>
+ <font color="MediumSeaGreen">  {{prediction_text4}}</font>
+   <br>
+  <font color="MediumSeaGreen"> {{prediction_text5}}</font>
+   <br>
+  <font color="MediumSeaGreen"> {{prediction_text6}}</font>
+   <br>
+  <font color="MediumSeaGreen"> {{prediction_text7}}</font>
+   <br>
+  <font color="MediumSeaGreen"> {{prediction_text8}}</font>
+   <br>
+  <font color="MediumSeaGreen"> {{prediction_text9}}</font>
+   <br>
+  <font color="MediumSeaGreen"> {{prediction_text10}}</font>
+   <br>
+  <font color="MediumSeaGreen"> {{prediction_text11}}</font>
+   
+   
+ </div>
+
+
+</body>
+</html>
